@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Availability</title>
+</head>
+
+<body>
+    <h1>Set Availability</h1>
+    <form method="post">
+        {{ form.csrf_token }}
+        <div>
+            {{ form.start_time.label }} {{ form.start_time(size=20) }}
+        </div>
+        <div>
+            {{ form.end_time.label }} {{ form.end_time(size=20) }}
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
